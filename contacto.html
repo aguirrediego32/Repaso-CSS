@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <title>Quildroid</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/contacto.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Quildroid, el robot autónomo de la Luna</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="misiones.html">Misiones</a></li>
+          <li><a href="audivisuales.html">Audiovisuales</a></li>
+          <li><a class="active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="contenedor">
+      <form>
+        <label for="Nombre">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Escriba aquí su nombre"
+          minlength="3"
+          required
+        />
+        <label for="mail">Email</label>
+        <input
+          type="email"
+          id="mail"
+          name="mail"
+          placeholder="Escriba aquí su email"
+          required
+        />
+        <label for="pais">País</label>
+        <select name="pais" id="pais">
+          <option value="Argentina">Argentina</option>
+          <option value="Chile">Chile</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Perú">Perú</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="España">España</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Paraguay">Paraguay</option>
+          <option value="Ecuaador">Ecuador</option>
+        </select>
+        <label for="comentario">Comentario</label>
+        <textarea
+          name="comentario"
+          id="comentario"
+          placeholder="Escriba aquí el comentario"
+        ></textarea>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+
+    <footer>
+      <p>Derechos reservados &copy; 2023</p>
+    </footer>
+  </body>
+</html>
